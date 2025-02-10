@@ -1,6 +1,7 @@
 # datainterface
 Industrial Energy Data Exploration Interface
 
+```
 Repository File Structure
 
 ├── README.md
@@ -16,3 +17,4 @@ Repository File Structure
 └── src
     ├── data_cleaning.ipynb
     └── eda.ipynb
+```
