@@ -7,14 +7,8 @@ import numpy as np
 
 # import data
 # ------- define paths -------
-# define relative path
 relative_path = Path('../data/raw_data/')
-
-# get absolute path
 absolute_path = relative_path.resolve()
-#print(absolute_path)
-
-# declare file names
 filename_iac = "IAC_Database_20250208.xls"
 
 # ------- import data -------
@@ -39,7 +33,6 @@ iac_assess_df = all_sheets['ASSESS']
 
 # check missing NAICS codes
 print(f'Total count of ARCs with Null NAICS: {iac_assess_df[iac_assess_df["NAICS"].isna()].count()}')
-
 null_naics_df = iac_assess_df[iac_assess_df['NAICS'].isna()]
 print(f'Total count of ARCs with Null NAICS per year: {null_naics_df["FY"].value_counts()}')
 
@@ -48,6 +41,4 @@ recc_energy_df = iac_recc_df[iac_recc_df['ARC2'].astype(str).str[0] == str('2')]
 
 # generate a dataframe with NULL NAICS values for all assessments IDs that have recommendations within an Energy section
 null_naics_energy_df = null_naics_df[null_naics_df['ID'].isin(recc_energy_df['ID'])]
-
-# export the dataframe
 null_naics_energy_df.to_csv("../data/intermediate_data/null_naics_v3.csv", index=False)
