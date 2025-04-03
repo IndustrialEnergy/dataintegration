@@ -20,9 +20,18 @@ Repository File Structure
     └── eda.ipynb
 ```
 
-## Integrated Dataset
-To generate an integrated dataset execute the notebooks in the following order:
+📊 Integrated Dataset
 
-(1) src/notebooks/data_cleaning: generates datasets in tidy format
-(2) src/notebooks/arc_ppi: calculates adjusted implementation cost and integrates the values into the recc table
-(3) src/notebooks/emissions: integrates assess table into the recc table; calculates emissions and integrates the values into the final integrated iac dataset
+To generate the integrated dataset, execute the notebooks in the following order:
+
+1️⃣ Data Cleaning (src/notebooks/data_cleaning):
+* Processes raw data and outputs datasets in a tidy format.
+
+2️⃣ Adjusted Implementation Cost Calculation (src/notebooks/arc_ppi):
+* Computes adjusted implementation costs.
+* Integrates the calculated values into the recc table.
+
+3️⃣ Emissions Integration & Finalization (src/notebooks/emissions):
+* Merges the assess table into the recc table.
+* Calculates emissions data.
+* Integrates emissions into the final Integrated IAC Dataset.
