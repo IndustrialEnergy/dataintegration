@@ -41,6 +41,7 @@ Repository File Structure
 │   │   ├── ppi_tidy.csv
 │   │   └── recc_integrated_ppi.csv
 │   ├── processed_data
+│         └── iac_integrated.csv
 │   └── raw_data
 │       ├── ARC.xlsx
 │       ├── ARC_PPI.xlsx
@@ -60,6 +61,7 @@ Repository File Structure
     │   ├── emissions.ipynb
     │   ├── emissions_boxplot.ipynb
     │   ├── energy_savings_boxplot.ipynb
+    │   ├── energy_gauge.ipynb
     │   └── fuel_emissions_factors.ipynb
     └── scripts
         ├── data_cleaning.py
