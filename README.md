@@ -5,17 +5,23 @@ Industrial Energy Data Exploration Interface
 
 To generate the integrated dataset, execute the notebooks in the following order:
 
-1️⃣ Data Cleaning (src/notebooks/data_cleaning):
+1️⃣ Clean Data (src/notebooks/data_cleaning):
 * Processes raw data and outputs datasets in a tidy format.
 
-2️⃣ Adjusted Implementation Cost Calculation (src/notebooks/arc_ppi):
+2️⃣ Normalize Implementation Cost using PPI (src/notebooks/arc_ppi):
 * Computes adjusted implementation costs.
 * Integrates the calculated values into the recc table.
 
-3️⃣ Emissions Integration & Finalization (src/notebooks/emissions):
+3️⃣ Integrate Emissions (src/notebooks/emissions):
 * Merges the assess table into the recc table.
 * Calculates emissions data.
 * Integrates emissions into the final Integrated IAC Dataset.
+
+4️⃣ Integrate NAICS, ARC2 and Generate a Final Integrated Dataset (src/notebooks/data_cleaning_2):
+* Removes all records with audits prior to 1990
+* Removes all records with recommendations outside Energy category (arc2 starts with >2)
+* Integrates NAICS and SIC Descriptions
+* Integrates ARC Description
 
 ```
 Repository File Structure
@@ -58,6 +64,7 @@ Repository File Structure
     │   ├── adj_impcost_boxplot.ipynb
     │   ├── arc_ppi.ipynb
     │   ├── data_cleaning.ipynb
+    |   |── data_cleaning_2.ipynb
     │   ├── emissions.ipynb
     │   ├── emissions_boxplot.ipynb
     │   ├── energy_savings_boxplot.ipynb
