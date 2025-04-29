@@ -74,5 +74,8 @@ Repository File Structure
         ├── data_cleaning.py
         └── null_naics_check.py
 ```
-Student Authors: Oksana Protsukha, Naomi Moraes, Yos Ramirez, Eva Newby. 
-Capstone Advisor: Dr. Eric Masanet.
+## Authors
+
+Student Authors: Oksana Protsukha, Naommi Moraes, Yos Ramirez, Eva Newby.
+
+Capstone Advisor: Dr. Eric Masanet
