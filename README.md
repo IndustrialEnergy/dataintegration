@@ -1,4 +1,4 @@
-# dataintegration
+# Data Integration for the Industrial Energy Data Exploration Interface
 This repository contains the code necessary to produce an integrated dataset. 
 
 📊 Integrated Dataset
