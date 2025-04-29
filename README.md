@@ -1,5 +1,5 @@
-# datainterface
-Industrial Energy Data Exploration Interface
+# dataintegration
+This repository contains the code necessary to produce an integrated dataset. 
 
 📊 Integrated Dataset
 
@@ -74,3 +74,4 @@ Repository File Structure
         ├── data_cleaning.py
         └── null_naics_check.py
 ```
+Authors: Oksana Protsukha, Naomi Moraes, Yos Ramirez, Eva Newby. 
