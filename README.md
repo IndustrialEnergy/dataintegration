@@ -76,6 +76,6 @@ Repository File Structure
 ```
 ## Authors
 
-Student Authors: Oksana Protsukha, Naommi Moraes, Yos Ramirez, Eva Newby.
+Student Authors: Oksana Protsukha, Naomi Moraes, Yos Ramirez, Eva Newby.
 
 Capstone Advisor: Dr. Eric Masanet
